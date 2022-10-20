@@ -1,0 +1,55 @@
+*{
+    margin:0;
+}
+
+body{
+    background-color: rgb(227, 255, 255);
+    height: 100vh;
+}
+
+p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.polaroid{
+    width: 150px;
+    background-color: rgb(250, 255, 184);
+    margin-bottom: 50px;
+    position: absolute;
+    /* filter: grayscale(100%); */
+    filter: hue-rotate(360deg);
+    scale: calc(1);
+    transition: all 1.5s;
+}
+
+.polaroid:hover{
+    /* filter:grayscale(0);
+    filter: contrast(100%); */
+    filter: hue-rotate(0);
+    transform: scale(1.5);
+}
+
+.rotate-right{
+    left: 500px;
+    top: 125px;
+    transform: rotate(385deg);
+}
+
+.rotate-left{
+    left: 250px;
+    top: 1000px;
+    transform: rotate(-372.5deg);
+}
+
+.rotate-right:hover{
+    transform: rotate(0deg);
+}
+
+.rotate-left:hover{
+    transform: rotate(0deg);
+
+}
+
+
